@@ -112,7 +112,7 @@ public:
 		int position = 0;
 		for (int i = 1; i <= Height; i++)
 		{
-			for (int j = 1; j <= Height * (Height + Height - 1); j++)
+			for (int j = 1; j <= Weight * (Weight + Weight - 1); j++)
 			{
 				if ((j >= (Height - position)) && (j <= (Height + position)))
 				{
@@ -153,6 +153,9 @@ int main()
 		Triangle t(H, W);
 		t.ShowMsg();
 		cout << endl << endl;
+		RTriangle rt(H, W);
+		rt.ShowMsg();
+		cout << endl << endl;
 		if (H % 2 == 1)
 		{
 			Romb R(H, W);
@@ -165,8 +168,7 @@ int main()
 		Rectangle r(H, W);
 		r.ShowMsg();
 		cout << endl << endl;
-		RTriangle rt(H, W);
-		rt.ShowMsg();
+		
 		cout << endl << endl;
 	}
 	cout << endl;
